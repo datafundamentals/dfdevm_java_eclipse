@@ -1,0 +1,24 @@
+DEPENDENCIES
+  df_eclipse_ee
+    git: git://github.com/datafundamentals/df_eclipse_ee.git
+    revision: 289d89b0f936b7e6665e59dd5c75a37e71b71b58
+  df_java
+    git: git://github.com/datafundamentals/df_java.git
+    revision: de22600219932219e80ed60f8c2937783c74c8c9
+  df_maven
+    git: git://github.com/datafundamentals/df_maven.git
+    revision: cd00d8ff0204707c0ae0fe894e6c7850cafc9777
+  dfdevm_java_eclipse
+    path: .
+    metadata: true
+
+GRAPH
+  df_eclipse_ee (0.1.0)
+  df_java (0.1.7)
+    java (>= 0.0.0)
+  df_maven (0.1.7)
+  dfdevm_java_eclipse (0.1.0)
+    df_eclipse_ee (>= 0.0.0)
+    df_java (>= 0.0.0)
+    df_maven (>= 0.0.0)
+  java (1.35.0)
