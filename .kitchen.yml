@@ -3,6 +3,7 @@ driver:
   name: vagrant
   synced_folders: 
   - ["~/shuttle","/opt/shuttle"]
+  - ["~/work/polymer","/home/vagrant/polymer"]
 
 provisioner:
   name: chef_zero
