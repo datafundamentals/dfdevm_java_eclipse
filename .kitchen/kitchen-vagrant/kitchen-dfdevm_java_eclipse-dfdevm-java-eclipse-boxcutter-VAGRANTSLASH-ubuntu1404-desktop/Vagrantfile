@@ -1,0 +1,11 @@
+Vagrant.configure("2") do |c|
+  c.berkshelf.enabled = false if Vagrant.has_plugin?("vagrant-berkshelf")
+  c.vm.box = "boxcutter-VAGRANTSLASH-ubuntu1404-desktop"
+  c.vm.box_url = "~/Vagrant\ Boxes/boxcutter-VAGRANTSLASH-ubuntu1404-desktop"
+  c.vm.hostname = "dfdevm-java-eclipse-boxcutter-VAGRANTSLASH-ubuntu1404-desktop"
+  c.vm.synced_folder ".", "/vagrant", disabled: true
+  c.vm.synced_folder "/Users/petecarapetyan/shuttle", "/opt/shuttle", nil
+  c.vm.synced_folder "/Users/petecarapetyan/work/polymer", "/home/vagrant/polymer", nil
+  c.vm.provider :virtualbox do |p|
+  end
+end

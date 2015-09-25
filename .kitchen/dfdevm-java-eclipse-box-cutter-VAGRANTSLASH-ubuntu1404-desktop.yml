@@ -1,0 +1,6 @@
+---
+hostname: 127.0.0.1
+port: '2200'
+username: vagrant
+ssh_key: "/Users/petecarapetyan/work/dfdevm/dfdevm_java_eclipse/.kitchen/kitchen-vagrant/kitchen-dfdevm_java_eclipse-dfdevm-java-eclipse-box-cutter-VAGRANTSLASH-ubuntu1404-desktop/.vagrant/machines/default/virtualbox/private_key"
+last_action: create

@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/shuttle":{"guestpath":"/home/vagrant/shuttle","hostpath":"/Users/petecarapetyan/shuttle","disabled":false},"/home/vagrant/java_eclipse":{"guestpath":"/home/vagrant/java_eclipse","hostpath":"/Users/petecarapetyan/work/java_eclipse","disabled":false}}}

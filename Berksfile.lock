@@ -1,4 +1,6 @@
 DEPENDENCIES
+  df_docker
+    path: ../df_docker
   df_eclipse_ee
     git: git://github.com/datafundamentals/df_eclipse_ee.git
     revision: 289d89b0f936b7e6665e59dd5c75a37e71b71b58
@@ -13,12 +15,16 @@ DEPENDENCIES
     metadata: true
 
 GRAPH
+  df_docker (0.1.0)
+    docker (>= 0.0.0)
   df_eclipse_ee (0.1.0)
   df_java (0.1.7)
     java (>= 0.0.0)
   df_maven (0.1.7)
   dfdevm_java_eclipse (0.1.0)
+    df_docker (>= 0.0.0)
     df_eclipse_ee (>= 0.0.0)
     df_java (>= 0.0.0)
     df_maven (>= 0.0.0)
+  docker (1.0.34)
   java (1.35.0)

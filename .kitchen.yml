@@ -2,17 +2,19 @@
 driver:
   name: vagrant
   synced_folders: 
-  - ["~/shuttle","/opt/shuttle"]
-  - ["~/work/polymer","/home/vagrant/polymer"]
+  - ["~/shuttle","/home/vagrant/shuttle"]
+  - ["~/work/java_eclipse","/home/vagrant/java_eclipse"]
 
 provisioner:
   name: chef_zero
 
 platforms:
-- name: boxcutter-VAGRANTSLASH-ubuntu1404-desktop
+- name: box-cutter-VAGRANTSLASH-ubuntu1404-desktop
   driver_config:
-    box: boxcutter-VAGRANTSLASH-ubuntu1404-desktop
-    box_url: ~/Vagrant\ Boxes/boxcutter-VAGRANTSLASH-ubuntu1404-desktop
+    box: box-cutter-VAGRANTSLASH-ubuntu1404-desktop
+    box_url: ~/Vagrant\ boxes/box-cutter-VAGRANTSLASH-ubuntu1404-desktop
+    network:
+    - ["private_network", {ip: "192.168.33.33"}]
 
 suites:
   - name: dfdevm_java_eclipse
